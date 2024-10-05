@@ -1,0 +1,494 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Gabarito", sans-serif;
+}
+
+.navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 3;
+}
+
+.tripl1 {
+    height: 40px;
+    /* Adjust logo height */
+    margin-right: 10px;
+    /* Spacing between logo and title */
+    border-radius: 30px;
+}
+
+.navbar_s1 {
+    display: flex;
+}
+
+.navbar_s2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.navbar_s2 p {
+    border: solid #FFFFFF 1px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.navbar_s2 p:hover {
+    border: solid #F2F2F2 1px;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    color: black;
+    transition: 1s;
+    padding: 5px;
+
+
+}
+
+.weblogo {
+    display: flex;
+}
+
+.navbar_s3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.weblogo {
+    border: solid #F2F2F2 1px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.weblogo:hover {
+    background-color: #F2F2F2;
+    border: solid black 1px;
+    transition: 1s;
+}
+
+.signin {
+    border: solid black 2px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.signin:hover {
+    background-color: #F2F2F2;
+    color: black;
+    transition: 1s;
+}
+
+.texthead {
+    margin-top: 25px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px;
+    flex-wrap: wrap;
+}
+
+.cat_1,
+.cat_2,
+.cat_3,
+.cat_4,
+.cat_5,
+.cat_6 {
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.cat_1,
+.cat_2:hover {
+    border-bottom: solid black 1px;
+}
+
+.cat_3:hover {
+    border-bottom: solid black 1px;
+}
+
+.cat_4:hover {
+    border-bottom: solid black 1px;
+}
+
+.cat_5:hover {
+    border-bottom: solid black 1px;
+}
+
+.search {
+    padding: 10px;
+    border: solid black 1px;
+    width: 60%;
+    /* Adjust as needed */
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.search input {
+    border: none;
+    width: 70%;
+    font-size: 16px;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.search_button {
+    background-color: #34E0A1;
+    /* Button background color */
+    color: white;
+    /* Text color */
+    padding: 10px;
+    /* Padding for the button */
+    cursor: pointer;
+    /* Changes cursor on hover */
+    margin-left: auto;
+    /* Pushes the button to the end */
+    display: flex;
+    /* Centers text inside the button */
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    border-radius: 30px;
+}
+
+.search_button:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+.image {
+    position: relative;
+}
+.image {
+    margin-top: 10px;
+    padding: 10px
+}
+
+.recommanded {
+    padding: 10px;
+}
+
+.trip-container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.recommanded_title {
+    padding-left: 10px;
+}
+
+.recommanded p {
+    padding: 10px;
+}
+
+.recommanded-1_title {
+    padding-left: 10px;
+}
+
+.recommanded-1 p {
+    padding: 10px;
+}
+
+.tripcard-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    flex-direction: row;
+}
+
+.tripcard {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1 1 calc(23% - 20px);
+    /* 4 cards in a row with spacing */
+    text-align: left;
+    padding: 10px;
+    transition: transform 0.2s;
+}
+
+.tripcard:hover {
+    transform: scale(1.05);
+}
+
+.tripcard img {
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.tripcard h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.tripcard p {
+    margin: 5px 0;
+}
+
+.recommanded-1 {
+    padding: 10px;
+}
+
+
+.trip-container1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    flex-direction: row;
+}
+
+.tripcards {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1 1 calc(23% - 20px);
+    /* 4 cards in a row with spacing */
+    text-align: left;
+    padding: 10px;
+    transition: transform 0.2s;
+}
+
+.tripcards:hover {
+    transform: scale(1.05);
+}
+
+.tripcards img {
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.tripcards h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.recommanded-1_title {
+    margin-bottom: 20px;
+}
+
+.footer_one {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border-bottom: solid black 1px;
+}
+
+.footer_one p:hover {
+    border-bottom: solid black 1px;
+    transition: 1s;
+}
+
+.footer_one p {
+    margin: 20px;
+    border-bottom: solid#F2F2F2 1px;
+}
+
+.footer_two {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+
+}
+
+.footer_two img {
+    height: 40px;
+    /* Adjust logo height */
+    border-radius: 30px;
+}
+
+.footer {
+    padding: 30px;
+    background-color: #F2F2F2;
+    color: black;
+    justify-content: space-between;
+}
+
+.offer-box {
+    background-color: #f8f9fa;
+    /* Light background */
+    border: 2px solid #007BFF;
+    /* Border color */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 20px;
+    /* Inner spacing */
+    max-width: 400px;
+    /* Maximum width */
+    margin: 20px auto;
+    /* Centered with margin */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    text-align: center;
+    /* Center text */
+    transition: transform 0.3s;
+    /* Animation on hover */
+    position: absolute;
+    top: 25%;
+    margin-left: 35px;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.offer-box:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+}
+
+.offer-box h3 {
+    color: #007BFF;
+    /* Heading color */
+    margin-bottom: 10px;
+    /* Spacing below heading */
+}
+
+.offer-box p {
+    margin: 10px 0;
+    /* Spacing around paragraph */
+}
+
+.offer-box ul {
+    list-style-type: none;
+    /* Remove bullets */
+    padding: 0;
+    /* Remove padding */
+    margin: 10px 0;
+    /* Spacing around list */
+}
+
+.offer-box li {
+    margin: 5px 0;
+    /* Spacing between list items */
+}
+
+.btn-offer {
+    background-color: #007BFF;
+    /* Button background */
+    color: white;
+    /* Button text color */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Rounded button corners */
+    padding: 10px 20px;
+    /* Button padding */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s;
+    /* Animation for hover */
+}
+
+.btn-offer:hover {
+    background-color: #0056b3;
+    /* Darker button color on hover */
+}
+
+.offer-box1 {
+    padding: 20px;
+    /* Inner spacing for better layout */
+    border: 2px solid #007BFF;
+    /* Border color */
+    border-radius: 10px;
+    /* Rounded corners */
+    margin: 20px;
+    /* Margin around the box */
+    text-align: left;
+    /* Left text alignment */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Semi-transparent background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for depth */
+    transition: transform 0.3s;
+}
+
+@media screen and (max-width:800px) {
+    body {
+        font: size 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .imageoffer {
+        flex-grow: 10px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .navbar_s2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .offer-box {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .offer-box1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .categories {}
+
+}
